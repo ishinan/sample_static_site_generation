@@ -1,0 +1,62 @@
+Note: This activity is very similar to the work you will be doing for
+homework! So, pay attention :)
+
+1. Try out the HTML in your browser. See how you can smoothly click
+around?
+
+2. Inspect these 3 HTML pages. Discuss with the student next to you what
+you see in the HTML code. Observe the things that overlap, and the
+things that change between the three pages.
+
+3. Your goal is to combine the parts that overlap into one or more files
+"template" files, and the parts that are different into "content" files.
+
+4. Discuss with the student next to you a strategy on how you might
+extricate the HTML code that is in common between all the files and a
+strategy to store them in different files.
+
+5. Start splitting up the files according to the strategy you have
+devised.
+
+5. Like a Bob Ross painting, lets start by painting in broad strokes!
+That's "pseudocode". Create a brand new Python file and, in "psuedocode"
+comments, describe how you might write code that re-combines the pages
+into a single page.
+
+6. Start filling in the psuedocode. Your first goal is to write a Python
+script that will re-combine a single HTML file.  For now, don't worry
+about page titles, or the "active" class on links.
+
+7. Finish your Python script to work with all three pages.
+
+8. Prove that it works: Change the <style> tag for all pages with a
+single change.
+
+
+
+
+Bonus challenge:
+See if you can modify the script to respect page titles, and "active"
+classes on links. This can be challenging! Experiment with the following
+code to get a clue:
+
+from string import Template
+some_string = 'Hi ${name}, how are you?'
+template = Template(some_string)
+print(template.safe_substitute(name='Ash Ketchum'))
+
+If done correctly, you can write it so there is only a single HTML
+template file, instead of a top and bottom.
+
+
+
+
+Advanced Challenge:
+Experiment with the following code, and see if you can write code to
+generate 100 pages, each that use the Bob Ross formatting, but just
+display a single number in <h1></h1> tags.
+
+for x in range(100):
+    print(x)
+
+Can you get them to each link to the next page, from page 1 to page 100?

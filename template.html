@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>${Title} - Bob Ross</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        ol li a {
+            font-size: 18pt;
+            font-weight: bold;
+        }
+        ol li a.active {
+            color: white;
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <h1>Welcome to my happy little blog!</h1>
+
+            <ol class="list-unstyled">
+${Nav}
+            </ol>
+            <img src="https://i.imgur.com/nDNtBG1.png" class="img-fluid" />
+
+        </div>
+
+${Html_Contents}
+
+      </div>
+
+    </div>
+</body>
+</html>
